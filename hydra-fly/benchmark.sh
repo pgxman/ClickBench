@@ -6,7 +6,7 @@ IFS=$'\n\t'
 ./run.sh 2>&1 | tee log.txt
 
 # disk usage
-du -bcs /var/lib/postgresql/14/main/
+du -bcs /data/postgresql/
 
 # parse results for json file
 ./parse.sh < log.txt
